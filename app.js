@@ -80,8 +80,13 @@ function sortearAmigo(){
     const li = document.createElement("li");
     li.textContent = listaDeAmigos[elegido - 1]
     resultado.appendChild(li);
-    listaDeAmigos.length=0;
-    contador=1;
+    //listaDeAmigos.length=0;
+    //contador=1;
+   
+    listaDeAmigos.splice(elegido - 1, 1); 
+
+    console.log(listaDeAmigos); 
+
     //const nombreAmigo = document.getElementById("amigo");
     //nombreAmigo.value ="";
 }
